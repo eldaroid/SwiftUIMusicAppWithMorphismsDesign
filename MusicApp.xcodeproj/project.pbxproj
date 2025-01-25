@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31765D0F2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31765D0E2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign.swift */; };
+		31765D0F2C48A8EF0044510E /* MusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31765D0E2C48A8EF0044510E /* MusicApp.swift */; };
 		31765D132C48A8F00044510E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31765D122C48A8F00044510E /* Assets.xcassets */; };
 		31CB34492D455C39004B6318 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CB34482D455C39004B6318 /* HomeHeaderView.swift */; };
 		31F81BD82C48A9840003F814 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F81BC72C48A9840003F814 /* HomeView.swift */; };
@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		31765D0B2C48A8EF0044510E /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		31765D0E2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMusicAppWithMorphismsDesign.swift; sourceTree = "<group>"; };
+		31765D0E2C48A8EF0044510E /* MusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicApp.swift; sourceTree = "<group>"; };
 		31765D122C48A8F00044510E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31CB34482D455C39004B6318 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		31F81BC72C48A9840003F814 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		31765D022C48A8EF0044510E = {
 			isa = PBXGroup;
 			children = (
-				31765D0D2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign */,
+				31765D0D2C48A8EF0044510E /* MusicApp */,
 				31765D0C2C48A8EF0044510E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,10 +70,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		31765D0D2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign */ = {
+		31765D0D2C48A8EF0044510E /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
-				31765D0E2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign.swift */,
+				31765D0E2C48A8EF0044510E /* MusicApp.swift */,
 				31765D122C48A8F00044510E /* Assets.xcassets */,
 				31F81BD42C48A9840003F814 /* Helpers */,
 				31F81BC92C48A9840003F814 /* Home */,
@@ -81,7 +81,7 @@
 				31F81BD72C48A9840003F814 /* Player */,
 				31F81BD02C48A9840003F814 /* Views */,
 			);
-			path = SwiftUIMusicAppWithMorphismsDesign;
+			path = MusicApp;
 			sourceTree = "<group>";
 		};
 		31F81BC92C48A9840003F814 /* Home */ = {
@@ -148,7 +148,7 @@
 			dependencies = (
 			);
 			name = MusicApp;
-			productName = SwiftUIMusicAppWithMorphismsDesign;
+			productName = MusicApp;
 			productReference = 31765D0B2C48A8EF0044510E /* MusicApp.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -206,7 +206,7 @@
 				31F81BDA2C48A9840003F814 /* Data.swift in Sources */,
 				31F81BDE2C48A9840003F814 /* PlaylistView.swift in Sources */,
 				31F81BE32C48A9840003F814 /* PlayerViewModel.swift in Sources */,
-				31765D0F2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign.swift in Sources */,
+				31765D0F2C48A8EF0044510E /* MusicApp.swift in Sources */,
 				31F81BDD2C48A9840003F814 /* MusicDiscView.swift in Sources */,
 				31F81BE22C48A9840003F814 /* PlayerView.swift in Sources */,
 				31F81BD92C48A9840003F814 /* HomeViewModel.swift in Sources */,
@@ -359,7 +359,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HSE.SwiftUIMusicAppWithMorphismsDesign;
+				PRODUCT_BUNDLE_IDENTIFIER = HSE.MusicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -374,7 +374,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIMusicAppWithMorphismsDesign/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MusicApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -387,7 +387,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HSE.SwiftUIMusicAppWithMorphismsDesign;
+				PRODUCT_BUNDLE_IDENTIFIER = HSE.MusicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

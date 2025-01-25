@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct SwiftUIMusicAppWithMorphismsDesignApp: App {
+struct MusicApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
