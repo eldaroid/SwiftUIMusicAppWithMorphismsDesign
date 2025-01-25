@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		31765D0B2C48A8EF0044510E /* PlayMusicLectureHSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayMusicLectureHSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31765D0B2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMusicAppWithMorphismsDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31765D0E2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMusicAppWithMorphismsDesign.swift; sourceTree = "<group>"; };
 		31765D122C48A8F00044510E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31CB34482D455C39004B6318 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		31765D0C2C48A8EF0044510E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31765D0B2C48A8EF0044510E /* PlayMusicLectureHSE.app */,
+				31765D0B2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		31765D0A2C48A8EF0044510E /* PlayMusicLectureHSE */ = {
+		31765D0A2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31765D192C48A8F00044510E /* Build configuration list for PBXNativeTarget "PlayMusicLectureHSE" */;
+			buildConfigurationList = 31765D192C48A8F00044510E /* Build configuration list for PBXNativeTarget "SwiftUIMusicAppWithMorphismsDesign" */;
 			buildPhases = (
 				31765D072C48A8EF0044510E /* Sources */,
 				31765D082C48A8EF0044510E /* Frameworks */,
@@ -147,9 +147,9 @@
 			);
 			dependencies = (
 			);
-			name = PlayMusicLectureHSE;
+			name = SwiftUIMusicAppWithMorphismsDesign;
 			productName = PlayMusicLectureHSE;
-			productReference = 31765D0B2C48A8EF0044510E /* PlayMusicLectureHSE.app */;
+			productReference = 31765D0B2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 31765D062C48A8EF0044510E /* Build configuration list for PBXProject "PlayMusicLectureHSE" */;
+			buildConfigurationList = 31765D062C48A8EF0044510E /* Build configuration list for PBXProject "SwiftUIMusicAppWithMorphismsDesign" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -180,7 +180,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				31765D0A2C48A8EF0044510E /* PlayMusicLectureHSE */,
+				31765D0A2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign */,
 			);
 		};
 /* End PBXProject section */
@@ -398,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31765D062C48A8EF0044510E /* Build configuration list for PBXProject "PlayMusicLectureHSE" */ = {
+		31765D062C48A8EF0044510E /* Build configuration list for PBXProject "SwiftUIMusicAppWithMorphismsDesign" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				31765D172C48A8F00044510E /* Debug */,
@@ -407,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31765D192C48A8F00044510E /* Build configuration list for PBXNativeTarget "PlayMusicLectureHSE" */ = {
+		31765D192C48A8F00044510E /* Build configuration list for PBXNativeTarget "SwiftUIMusicAppWithMorphismsDesign" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				31765D1A2C48A8F00044510E /* Debug */,
