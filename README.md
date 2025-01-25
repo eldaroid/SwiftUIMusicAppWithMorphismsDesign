@@ -2,4 +2,4 @@
 
 🎓🎧 Development Project of the SwiftUI Music App with an In-Depth Study of Morphisms in Design
 
-![Uploading swiftuimusicappwithmorphismsdesign_lSkQDR8w-ezgif.com-video-to-gif-converter.gif…]()
+![](https://github.com/eldaroid/SwiftUIMusicAppWithMorphismsDesign/issues/1#issue-2811142029)
