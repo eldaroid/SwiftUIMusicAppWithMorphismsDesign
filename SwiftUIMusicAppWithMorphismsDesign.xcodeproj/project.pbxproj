@@ -57,7 +57,7 @@
 		31765D022C48A8EF0044510E = {
 			isa = PBXGroup;
 			children = (
-				31765D0D2C48A8EF0044510E /* PlayMusicLectureHSE */,
+				31765D0D2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign */,
 				31765D0C2C48A8EF0044510E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,7 +70,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		31765D0D2C48A8EF0044510E /* PlayMusicLectureHSE */ = {
+		31765D0D2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign */ = {
 			isa = PBXGroup;
 			children = (
 				31765D0E2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign.swift */,
@@ -81,7 +81,7 @@
 				31F81BD72C48A9840003F814 /* Player */,
 				31F81BD02C48A9840003F814 /* Views */,
 			);
-			path = PlayMusicLectureHSE;
+			path = SwiftUIMusicAppWithMorphismsDesign;
 			sourceTree = "<group>";
 		};
 		31F81BC92C48A9840003F814 /* Home */ = {
@@ -148,7 +148,7 @@
 			dependencies = (
 			);
 			name = SwiftUIMusicAppWithMorphismsDesign;
-			productName = PlayMusicLectureHSE;
+			productName = SwiftUIMusicAppWithMorphismsDesign;
 			productReference = 31765D0B2C48A8EF0044510E /* SwiftUIMusicAppWithMorphismsDesign.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -359,7 +359,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HSE.PlayMusicLectureHSE;
+				PRODUCT_BUNDLE_IDENTIFIER = HSE.SwiftUIMusicAppWithMorphismsDesign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -374,7 +374,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PlayMusicLectureHSE/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIMusicAppWithMorphismsDesign/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -387,7 +387,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HSE.PlayMusicLectureHSE;
+				PRODUCT_BUNDLE_IDENTIFIER = HSE.SwiftUIMusicAppWithMorphismsDesign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
