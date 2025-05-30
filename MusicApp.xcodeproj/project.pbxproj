@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3164F9112DE9D53200419AC8 /* PlayerDiscView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3164F9102DE9D52B00419AC8 /* PlayerDiscView.swift */; };
+		3164F9132DE9D69900419AC8 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3164F9122DE9D69800419AC8 /* RadioPlayer.swift */; };
 		31765D0F2C48A8EF0044510E /* MusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31765D0E2C48A8EF0044510E /* MusicApp.swift */; };
 		31765D132C48A8F00044510E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31765D122C48A8F00044510E /* Assets.xcassets */; };
 		31CB34492D455C39004B6318 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CB34482D455C39004B6318 /* HomeHeaderView.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3164F9102DE9D52B00419AC8 /* PlayerDiscView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDiscView.swift; sourceTree = "<group>"; };
+		3164F9122DE9D69800419AC8 /* RadioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
 		31765D0B2C48A8EF0044510E /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31765D0E2C48A8EF0044510E /* MusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicApp.swift; sourceTree = "<group>"; };
 		31765D122C48A8F00044510E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 		31F81BD72C48A9840003F814 /* Player */ = {
 			isa = PBXGroup;
 			children = (
+				3164F9122DE9D69800419AC8 /* RadioPlayer.swift */,
+				3164F9102DE9D52B00419AC8 /* PlayerDiscView.swift */,
 				31F81BD52C48A9840003F814 /* PlayerView.swift */,
 				31F81BD62C48A9840003F814 /* PlayerViewModel.swift */,
 			);
@@ -203,11 +209,13 @@
 			files = (
 				31F81BD82C48A9840003F814 /* HomeView.swift in Sources */,
 				31F81BDC2C48A9840003F814 /* MadeForView.swift in Sources */,
+				3164F9112DE9D53200419AC8 /* PlayerDiscView.swift in Sources */,
 				31F81BDA2C48A9840003F814 /* Data.swift in Sources */,
 				31F81BDE2C48A9840003F814 /* PlaylistView.swift in Sources */,
 				31F81BE32C48A9840003F814 /* PlayerViewModel.swift in Sources */,
 				31765D0F2C48A8EF0044510E /* MusicApp.swift in Sources */,
 				31F81BDD2C48A9840003F814 /* MusicDiscView.swift in Sources */,
+				3164F9132DE9D69900419AC8 /* RadioPlayer.swift in Sources */,
 				31F81BE22C48A9840003F814 /* PlayerView.swift in Sources */,
 				31F81BD92C48A9840003F814 /* HomeViewModel.swift in Sources */,
 				31F81BE12C48A9840003F814 /* NeuShadow.swift in Sources */,
