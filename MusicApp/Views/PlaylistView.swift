@@ -8,19 +8,32 @@
 import SwiftUI
 
 struct PlaylistView: View {
-    let name: String, artistName: String, coverImage: Image
+    let name: String, coverImage: URL
     
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
-            coverImage.resizable().scaledToFill()
-                .frame(width: 114, height: 88).cornerRadius(16)
-            Text(name).foregroundColor(.text_primary)
+            AsyncImage(url: coverImage) { phase in
+                if let image = phase.image {
+                    image
+                        .resizable()
+                        .scaledToFit()
+                } else {
+                    Color.gray
+                }
+            }
+            .frame(width: 140, height: 100)
+            .cornerRadius(16)
+            
+            Text(name)
+                .foregroundColor(.text_primary)
                 .bold()
-                .padding(.top, 12).padding(.bottom, 6)
-            Text(artistName).foregroundColor(.text_primary_f1)
-                .padding(.bottom, 8)
+                .frame(height: 70)
+                .padding(.top, 12)
+                .padding(.bottom, 6)
         }
-        .padding(12).background(Color.primary_color)
+        .padding(12)
+        .background(Color.primary_color)
         .cornerRadius(24).modifier(NeuShadow())
+        .frame(maxWidth: 200, maxHeight: 400)
     }
 }

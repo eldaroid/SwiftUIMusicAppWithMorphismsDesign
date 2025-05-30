@@ -32,12 +32,10 @@ struct PlayerView: View {
                     }
                 }.padding(.horizontal, HORIZONTAL_SPACING).padding(.top, 12)
                 
-                PlayerDiscView(coverImage: viewModel.model.coverImage)
+                 PlayerDiscView(coverImage: viewModel.model.imageUrl)
                 
                 Text(viewModel.model.name).foregroundColor(.text_primary)
                     .foregroundColor(.black)
-                    .padding(.top, 12)
-                Text(viewModel.model.artistName).foregroundColor(.text_primary_f1)
                     .bold()
                     .padding(.top, 12)
                 
@@ -83,7 +81,7 @@ struct PlayerView: View {
 }
 
 fileprivate struct PlayerDiscView: View {
-    let coverImage: Image
+    let coverImage: URL
     var body: some View {
         ZStack {
             Circle().foregroundColor(.primary_color)
@@ -95,8 +93,18 @@ fileprivate struct PlayerDiscView: View {
                     .frame(width: 150 + CGFloat((8 * i)),
                            height: 150 + CGFloat((8 * i)))
             }
-            coverImage.resizable().scaledToFill()
-                .frame(width: 120, height: 120).cornerRadius(60)
+            AsyncImage(url: coverImage) { phase in
+                if let image = phase.image {
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(16)
+                } else {
+                    Color.gray
+                }
+            }
+            .frame(width: 120, height: 120)
+            .cornerRadius(60)
         }
     }
 }

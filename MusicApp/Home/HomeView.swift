@@ -20,11 +20,15 @@ struct HomeView: View {
                     // Header
                     HomeHeaderView(headerStr: viewModel.headerStr, onTapSearch: { searchTapped.toggle() })
                     // Playlists
-                    HomePlaylistView(playlists: viewModel.playlists, onSelect: viewModel.selectMusic(music:))
+                    HomePlaylistView(
+                        playlists: viewModel.playlists,
+                        onSelect: viewModel.selectMusic(music:)
+                    )
+                    
                     // Recently Played
-                    HomeRecentlyPlayedView(recentlyPlayed: viewModel.recentlyPlayed, onSelect: viewModel.selectMusic(music:))
+                    // HomeRecentlyPlayedView(recentlyPlayed: viewModel.recentlyPlayed, onSelect: viewModel.selectMusic(music:))
                     // Made for You
-                    HomeMadeForView(onSelect: viewModel.selectMusic(music:))
+                    // HomeMadeForView(onSelect: viewModel.selectMusic(music:))
                     
                     Spacer().frame(height: 150)
                     Spacer()
@@ -49,13 +53,15 @@ fileprivate struct HomePlaylistView: View {
             Text("Your Playlist").foregroundColor(.text_header)
                 .bold()
                 .padding(.horizontal, Constants.Sizes.HORIZONTAL_SPACING)
+            
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
+                HStack(spacing: 24) {
                     ForEach(0..<playlists.count, id: \.self) { i in
                         Button(action: { onSelect(playlists[i]) }, label: {
-                            PlaylistView(name: playlists[i].name,
-                                         artistName: playlists[i].artistName,
-                                         coverImage: playlists[i].coverImage)
+                            PlaylistView(
+                                name: playlists[i].name,
+                                coverImage: playlists[i].imageUrl
+                           )
                         }).padding(.top, 6).padding(.bottom, 40)
                     }
                 }.padding(.horizontal, Constants.Sizes.HORIZONTAL_SPACING)
@@ -64,40 +70,40 @@ fileprivate struct HomePlaylistView: View {
     }
 }
 
-
-fileprivate struct HomeRecentlyPlayedView: View {
-    let recentlyPlayed: [MusicModel], onSelect: (MusicModel) -> ()
-    var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Text("Recently Played").foregroundColor(.text_header)
-                .bold()
-                .padding(.leading, Constants.Sizes.HORIZONTAL_SPACING)
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(0..<recentlyPlayed.count, id: \.self) { i in
-                        Button(action: { onSelect(recentlyPlayed[i]) }, label: {
-                            MusicDiscView(name: recentlyPlayed[i].name,
-                                          artistName: recentlyPlayed[i].artistName,
-                                          coverImage: recentlyPlayed[i].coverImage)
-                        }).padding(.top, 6).padding(.bottom, 40)
-                    }
-                }.padding(.horizontal, Constants.Sizes.HORIZONTAL_SPACING)
-            }
-        }
-    }
-}
-
-
-fileprivate struct HomeMadeForView: View {
-    let onSelect: (MusicModel) -> ()
-    var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Text("Made for You").foregroundColor(.text_header)
-                .bold()
-                .padding(.leading, Constants.Sizes.HORIZONTAL_SPACING)
-            Button(action: { onSelect(Constants.Data.MADE_FOR_YOU) }, label: {
-                MadeForView()
-            }).padding([.horizontal, .top], Constants.Sizes.HORIZONTAL_SPACING).padding(.bottom, 40)
-        }
-    }
-}
+//
+//fileprivate struct HomeRecentlyPlayedView: View {
+//    let recentlyPlayed: [MusicModel], onSelect: (MusicModel) -> ()
+//    var body: some View {
+//        VStack(alignment: .leading, spacing: 0) {
+//            Text("Recently Played").foregroundColor(.text_header)
+//                .bold()
+//                .padding(.leading, Constants.Sizes.HORIZONTAL_SPACING)
+//            ScrollView(.horizontal, showsIndicators: false) {
+//                HStack {
+//                    ForEach(0..<recentlyPlayed.count, id: \.self) { i in
+//                        Button(action: { onSelect(recentlyPlayed[i]) }, label: {
+//                            MusicDiscView(name: recentlyPlayed[i].name,
+//                                          artistName: recentlyPlayed[i].artistName,
+//                                          coverImage: recentlyPlayed[i].coverImage)
+//                        }).padding(.top, 6).padding(.bottom, 40)
+//                    }
+//                }.padding(.horizontal, Constants.Sizes.HORIZONTAL_SPACING)
+//            }
+//        }
+//    }
+//}
+//
+//
+//fileprivate struct HomeMadeForView: View {
+//    let onSelect: (MusicModel) -> ()
+//    var body: some View {
+//        VStack(alignment: .leading, spacing: 0) {
+//            Text("Made for You").foregroundColor(.text_header)
+//                .bold()
+//                .padding(.leading, Constants.Sizes.HORIZONTAL_SPACING)
+//            Button(action: { onSelect(Constants.Data.MADE_FOR_YOU) }, label: {
+//                MadeForView()
+//            }).padding([.horizontal, .top], Constants.Sizes.HORIZONTAL_SPACING).padding(.bottom, 40)
+//        }
+//    }
+//}
