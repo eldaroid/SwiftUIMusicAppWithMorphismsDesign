@@ -20,6 +20,12 @@ struct MusicModel: Codable, Identifiable, Equatable {
         case imageUrl = "favicon"
     }
     
+    init(name: String, imageURL: URL, streamUrl: String) {
+        self.name = name
+        self.imageUrl = imageURL
+        self.streamUrl = streamUrl
+    }
+    
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)

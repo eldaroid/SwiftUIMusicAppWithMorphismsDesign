@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Image {
+public extension Image {
     // icons
     static let close = Image("arrow_down")
     static let options = Image("options_icon")

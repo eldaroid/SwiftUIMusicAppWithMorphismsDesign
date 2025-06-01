@@ -28,7 +28,7 @@ struct HomeView: View {
                     // Recently Played
                     // HomeRecentlyPlayedView(recentlyPlayed: viewModel.recentlyPlayed, onSelect: viewModel.selectMusic(music:))
                     // Made for You
-                    // HomeMadeForView(onSelect: viewModel.selectMusic(music:))
+                     HomeMadeForView(onSelect: viewModel.selectMusic(music:))
                     
                     Spacer().frame(height: 150)
                     Spacer()
@@ -94,16 +94,16 @@ fileprivate struct HomePlaylistView: View {
 //}
 //
 //
-//fileprivate struct HomeMadeForView: View {
-//    let onSelect: (MusicModel) -> ()
-//    var body: some View {
-//        VStack(alignment: .leading, spacing: 0) {
-//            Text("Made for You").foregroundColor(.text_header)
-//                .bold()
-//                .padding(.leading, Constants.Sizes.HORIZONTAL_SPACING)
-//            Button(action: { onSelect(Constants.Data.MADE_FOR_YOU) }, label: {
-//                MadeForView()
-//            }).padding([.horizontal, .top], Constants.Sizes.HORIZONTAL_SPACING).padding(.bottom, 40)
-//        }
-//    }
-//}
+fileprivate struct HomeMadeForView: View {
+    let onSelect: (MusicModel) -> ()
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text("Made for You").foregroundColor(.text_header)
+                .bold()
+                .padding(.leading, Constants.Sizes.HORIZONTAL_SPACING)
+            Button(action: { onSelect(Constants.Data.MADE_FOR_YOU) }, label: {
+                MadeForView()
+            }).padding([.horizontal, .top], Constants.Sizes.HORIZONTAL_SPACING).padding(.bottom, 40)
+        }
+    }
+}
