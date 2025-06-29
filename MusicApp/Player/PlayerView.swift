@@ -45,7 +45,7 @@ struct PlayerView: View {
                 HStack(alignment: .center, spacing: 12) {
                     Text("01:34").foregroundColor(.text_primary)
                         .bold()
-                    Slider(value: $viewModel.slider, in: 0...100)
+                    Slider(value: $radioPlayer.player.volume, in: 0...1)
                         .accentColor(.main_white)
                     Button(action: { viewModel.liked.toggle() }) {
                         (viewModel.liked ? Image.heart_filled : Image.heart)
